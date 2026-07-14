@@ -1,10 +1,17 @@
-function App() { 
-return ( 
-<main> 
-<h1>My First React App</h1> 
-<p>This is my first React + Vite project.</p> 
-<p>I am learning how to build modern frontend applications.</p> 
-</main> 
-); 
-} 
+import Header from "./components/Header";
+import ProfileCard from "./components/ProfileCard";
+import LearningPath from "./components/LearningPath";
+import Footer from "./components/Footer";
+
+function App() {
+  return (
+    <>
+      <Header />
+      <ProfileCard />
+      <LearningPath />
+      <Footer />
+    </>
+  );
+}
+
 export default App;
