@@ -1,0 +1,137 @@
+.learning-path {
+  background: #f8f9ff;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.learning-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 50px 0;
+  color: #333;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.step {
+  background: white;
+  border-radius: 10px;
+  padding: 25px 30px;
+  display: flex;
+  gap: 20px;
+  border-left: 5px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.step.completed {
+  border-left-color: #4caf50;
+  background: #f1f8f5;
+}
+
+.step.in-progress {
+  border-left-color: #ff9800;
+  background: #fff8f0;
+}
+
+.step.upcoming {
+  border-left-color: #2196f3;
+  background: #f0f7ff;
+}
+
+.step:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transform: translateX(5px);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.step-description {
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+.step-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-completed {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.badge-in-progress {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.badge-upcoming {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+@media (max-width: 768px) {
+  .learning-path {
+    padding: 40px 15px;
+  }
+
+  .learning-title {
+    font-size: 28px;
+    margin-bottom: 35px;
+  }
+
+  .step {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .step-title {
+    font-size: 18px;
+  }
+
+  .step-description {
+    font-size: 14px;
+  }
+}
