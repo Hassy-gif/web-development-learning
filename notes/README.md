@@ -18,3 +18,11 @@ The Footer component displays a simple copyright message.
 
 5. AI usage:
 AI helped me generate the React components and organize the project structure.
+
+# Task 6 Notes 
+Answer these questions using your own words. 
+Why did you separate the page into components? 
+What does the light/dark mode button do? 
+What happens when the button is clicked? 
+How did AI help you complete this task? 
+What part of the generated code did you understand the most?
